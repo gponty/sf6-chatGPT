@@ -41,7 +41,7 @@ class TriCommentairesCommand extends Command
 
         $result = $this->openai->completions()->create([
             'model' => 'text-davinci-003',
-            'prompt' => 'Trier les commentaires clients du plus sympa au plus méchant: \n\n'.implode('\n', $commentairesClients),
+            'prompt' => 'Trier les commentaires clients de ce restaurant du plus sympa au plus méchant: \n\n'.implode('\n', $commentairesClients),
             'max_tokens' => 1000,
         ]);
 
