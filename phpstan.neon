@@ -1,0 +1,13 @@
+includes:
+    - %currentWorkingDirectory%/vendor/phpstan/phpstan-symfony/extension.neon
+
+parameters:
+    level: 5
+
+    paths:
+        - %currentWorkingDirectory%/src/
+
+    excludes_analyse:
+
+    symfony:
+        container_xml_path: %currentWorkingDirectory%/var/cache/dev/App_KernelDevDebugContainer.xml
